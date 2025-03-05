@@ -1,6 +1,10 @@
-source 'https://rubygems.org'
+source "https://rubygems.org"
 
-gem 'github-pages', group: :jekyll_plugins
-gem 'wdm', '~> 0.1.0' if Gem.win_platform?
+# This will help ensure the proper Jekyll version is running.
+gem "jekyll", "~> 4.0.0"
 
-gem "webrick", "~> 1.8"
+group :jekyll_plugins do
+  gem 'jekyll-paginate'
+  gem 'jekyll-sitemap'
+end
+
