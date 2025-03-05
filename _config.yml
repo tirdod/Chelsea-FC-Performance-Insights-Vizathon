@@ -1,16 +1,29 @@
-name: Jekyll Themes
-url: http://matt.harzewski.com
-description: Insert tagline here
+title:               Chelsea FC Performance Insights Competition
+url:                 https://chelsea-fc-performance-insights.github.io/Competition/
+baseurl:             ""
 
-permalink: /themes/:title/
+markdown:            kramdown
+highlighter:         rouge
 
-plugins: [jekyll-paginate]
+exclude:             ['*.sublime-*', 'README.md', 'LICENSE', 'Gemfile', 'Gemfile.lock', 'vendor/bundle']
 
-highlighter: pygments
-paginate: 20
+permalink:           pretty
+paginate:            5
+paginate_path:       /blog/:num
 
-markdown: rdiscount
-rdiscount:
-    extensions: ['smart']
+blog:
+  truncated_preview: false
 
-exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'vendor']
+sass:
+  sass_dir:          _sass
+  style:             :compressed
+
+author:
+  name:              Chelsea FC
+  url:               https://chelsea-fc-performance-insights.github.io/Competition/
+  email:             test
+
+plugins:
+  - jekyll-coffeescript
+  - jekyll-paginate
+  - jekyll-gist
