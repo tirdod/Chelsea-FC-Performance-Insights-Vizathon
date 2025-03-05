@@ -1,5 +1,5 @@
-title:               Chelsea FC Performance Insights Competition
-url:                 https://chelsea-fc-performance-insights.github.io/Competition/
+title:               Celeste
+url:                 https://nicoelayda.github.io
 baseurl:             ""
 
 markdown:            kramdown
@@ -19,9 +19,9 @@ sass:
   style:             :compressed
 
 author:
-  name:              Chelsea FC
-  url:               https://chelsea-fc-performance-insights.github.io/Competition/
-  email:             test
+  name:              Nico Elayda
+  url:               nicoelayda.github.io
+  email:             nico@elayda.com
 
 plugins:
   - jekyll-coffeescript
