@@ -370,7 +370,11 @@
          <div class="col-lg-12">
             <div class="section-title mb-60">
                <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">Entry Criteria</h3>
-               <p class="wow fadeInUp" data-wow-delay=".4s">This competition is open to all individuals around the world —data visualisation professionals, designers, developers, analysts, sports scientists, students, and enthusiasts.<br>We welcome entries created using any tool (Examples include R, Power BI, Tableau, Streamlit, Python, Figma, Sketch, or even a wireframe!)</p>
+               <p class="wow fadeInUp" data-wow-delay=".4s">This competition is open to all individuals around the world —data visualisation professionals, designers, developers, analysts, sports scientists, students, and enthusiasts.<br>We welcome entries created using any tool (Examples include R, Power BI, Tableau, Streamlit, Python, Figma, Sketch, or even a wireframe!)
+
+               <br><br>
+               Entries must focus on <strong>one or more</strong> of the below competition modules.
+               </p>
             </div>
          </div>
       </div>
@@ -860,58 +864,204 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </section>
 <!-- ========================= team style-1 end ========================= -->
-
-              <div class="container pt-60 pb-60">
-                <h4 class="wow fadeInUp" data-wow-delay=".2s">FAQ</h4>
-             <!--   <h2 class="mb-30 wow fadeInUp" data-wow-delay=".4s">Free Lite Version of Template</h2>-->
-
-              <section id="faq" class="faq-section">
+    <!-- ========================= faq start ========================= -->
+<section id="faq" class="faq-section pt-60 pb-60">
   <div class="container">
-    <h2 class="section-title">Frequently Asked Questions</h2>
-    <div class="faq-grid">
-      <div class="faq-item">
-        <h3>Data</h3>
-        <p>No dataset will be supplied. Use publicly referenced data or create your own mock dataset tailored to the judging criteria. Be creative!</p>
-      </div>
-      <div class="faq-item">
-        <h3>Entry Fee</h3>
-        <p>Competition entry is completely free. Submit through the submissions form before the deadline.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Multiple Entries</h3>
-        <p>Yes, you can enter multiple times! Each submission requires a separate form.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Editing Entries</h3>
-        <p>Submit only when you're happy with your creation. You can edit until the submission deadline.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Group Submissions</h3>
-        <p>Group entries are allowed. Any prize won will be split equally among contestants.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Language</h3>
-        <p>All submissions must be in English, as it's the common language of the judges.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Feedback</h3>
-        <p>Feedback will be provided upon request after the winners are announced.</p>
-      </div>
-      <div class="faq-item">
-        <h3>Questions?</h3>
-        <p>Attend the optional launch or midpoint event for contact information.</p>
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title text-center mb-40">
+          <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">FAQ</h3>
+          <p class="wow fadeInUp" data-wow-delay=".4s">Frequently Asked Questions</p>
+        </div>
+        <div class="faq-wrapper">
+          <!-- Item 1 -->
+          <div class="single-faq wow fadeInUp" data-wow-delay=".2s">
+            <button class="w-100 text-left" onclick="toggleItem(1)">
+              <div class="faq-header d-flex align-items-center">
+                <span class="faq-icon">
+                  <i class="lni lni-plus" id="icon-plus-1"></i>
+                  <i class="lni lni-minus" id="icon-minus-1" style="display: none;"></i>
+                </span>
+                <h5>Will you supply any data?</h5>
+              </div>
+            </button>
+            <div class="faq-body" id="content-1" style="display: none;">
+              <p>No dataset will be supplied. Use publicly referenced data or create your own mock dataset tailored to the judging criteria. Be creative!</p>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="single-faq wow fadeInUp" data-wow-delay=".3s">
+            <button class="w-100 text-left" onclick="toggleItem(2)">
+              <div class="faq-header d-flex align-items-center">
+                <span class="faq-icon">
+                  <i class="lni lni-plus" id="icon-plus-2"></i>
+                  <i class="lni lni-minus" id="icon-minus-2" style="display: none;"></i>
+                </span>
+                <h5>Is there an entry fee?</h5>
+              </div>
+            </button>
+            <div class="faq-body" id="content-2" style="display: none;">
+              <p>Competition entry is completely free. Submit through the submissions form before the deadline. Prizes are awarded at the discretion of CFC.</p>
+            </div>
+          </div>
+          <!-- Add more items as needed -->
+        <div class="single-faq wow fadeInUp" data-wow-delay=".4s">
+          <button class="w-100 text-left" onclick="toggleItem(3)">
+            <div class="faq-header d-flex align-items-center">
+              <span class="faq-icon">
+                <i class="lni lni-plus" id="icon-plus-3"></i>
+                <i class="lni lni-minus" id="icon-minus-3" style="display: none;"></i>
+              </span>
+              <h5>Can I enter more than once?</h5>
+            </div>
+          </button>
+          <div class="faq-body" id="content-3" style="display: none;">
+            <p>Yes, you can enter multiple times. Each submission requires a separate form to be submitted.</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+<div class="single-faq wow fadeInUp" data-wow-delay=".5s">
+  <button class="w-100 text-left" onclick="toggleItem(4)">
+    <div class="faq-header d-flex align-items-center">
+      <span class="faq-icon">
+        <i class="lni lni-plus" id="icon-plus-4"></i>
+        <i class="lni lni-minus" id="icon-minus-4" style="display: none;"></i>
+      </span>
+      <h5>Is the competition open to international participants?</h5>
+    </div>
+  </button>
+  <div class="faq-body" id="content-4" style="display: none;">
+    <p>Yes, the competition is open to participants from all countries. We welcome diverse perspectives and ideas from around the world. We ask that all submissions are made in English language.</p>
+  </div>
+</div>
+
+<!-- Item 5 -->
+<div class="single-faq wow fadeInUp" data-wow-delay=".6s">
+  <button class="w-100 text-left" onclick="toggleItem(5)">
+    <div class="faq-header d-flex align-items-center">
+      <span class="faq-icon">
+        <i class="lni lni-plus" id="icon-plus-5"></i>
+        <i class="lni lni-minus" id="icon-minus-5" style="display: none;"></i>
+      </span>
+      <h5>What format should my submission be in?</h5>
+    </div>
+  </button>
+  <div class="faq-body" id="content-5" style="display: none;">
+    <p>Submissions should be made through the submission form. In most cases a public link should be given. If a file must be sent please send via email after submitting the form. </p>
+  </div>
+</div>
+
+<!-- Item 6 -->
+<div class="single-faq wow fadeInUp" data-wow-delay=".7s">
+  <button class="w-100 text-left" onclick="toggleItem(6)">
+    <div class="faq-header d-flex align-items-center">
+      <span class="faq-icon">
+        <i class="lni lni-plus" id="icon-plus-6"></i>
+        <i class="lni lni-minus" id="icon-minus-6" style="display: none;"></i>
+      </span>
+      <h5>Can I work in a team?</h5>
+    </div>
+  </button>
+  <div class="faq-body" id="content-6" style="display: none;">
+    <p>Yes, you can work individually or in a team. There's no limit on team size, but remember to list all team members in your submission. If nominated as a competition winner, the prize will be split between the team members.</p>
+  </div>
+</div>
+
+<!-- Item 7 -->
+<div class="single-faq wow fadeInUp" data-wow-delay=".8s">
+  <button class="w-100 text-left" onclick="toggleItem(7)">
+    <div class="faq-header d-flex align-items-center">
+      <span class="faq-icon">
+        <i class="lni lni-plus" id="icon-plus-7"></i>
+        <i class="lni lni-minus" id="icon-minus-7" style="display: none;"></i>
+      </span>
+      <h5>How will the winners be notified?</h5>
+    </div>
+  </button>
+  <div class="faq-body" id="content-7" style="display: none;">
+    <p>Winners will be notified via the email address provided in their submission in early May. Make sure to check your spam folder and keep an eye out for communications from our team.</p>
+  </div>
+</div>
+
+<!-- Item 8 -->
+<div class="single-faq wow fadeInUp" data-wow-delay=".9s">
+  <button class="w-100 text-left" onclick="toggleItem(8)">
+    <div class="faq-header d-flex align-items-center">
+      <span class="faq-icon">
+        <i class="lni lni-plus" id="icon-plus-8"></i>
+        <i class="lni lni-minus" id="icon-minus-8" style="display: none;"></i>
+      </span>
+      <h5>Is there a word limit for submissions?</h5>
+    </div>
+  </button>
+  <div class="faq-body" id="content-8" style="display: none;">
+    <p>The project itself has no word limit. A 300 word description cap is given as part of the submission form.</p>
+  </div>
+</div>
+
+        </div>
       </div>
     </div>
   </div>
 </section>
+<!-- ========================= faq end ========================= -->
 
+<style>
+  .faq-section {
+    background-color: #f5f5f5;
+  }
+  .single-faq {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  .faq-header {
+    padding: 12px 15px;
+    cursor: pointer;
+  }
+  .faq-header h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .faq-body {
+    padding: 0 15px 12px;
+  }
+  .faq-body p {
+    margin: 0;
+    font-size: 14px;
+  }
+  .faq-icon {
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  .single-faq button {
+    border: none;
+    background: none;
+    width: 100%;
+    text-align: left;
+  }
+</style>
 
+<script>
+  function toggleItem(id) {
+    const content = document.getElementById(`content-${id}`);
+    const iconPlus = document.getElementById(`icon-plus-${id}`);
+    const iconMinus = document.getElementById(`icon-minus-${id}`);
 
-                <p class="mb-50 wow fadeInUp" data-wow-delay=".6s">Please, purchase full version of the template to get all sections, features and permission to remove footer credit</p>
-                <div class="buttons">
-                  <a href="https://rebrand.ly/flat-ud/" rel="nofollow" target="blank" class="button button-lg radius-10 wow fadeInUp" data-wow-delay=".7s">Purchase Now</a>
-                </div>
-              </div>
+    if (content.style.display === 'none') {
+      content.style.display = 'block';
+      iconPlus.style.display = 'none';
+      iconMinus.style.display = 'inline';
+    } else {
+      content.style.display = 'none';
+      iconPlus.style.display = 'inline';
+      iconMinus.style.display = 'none';
+    }
+  }
+</script>
 
     <!-- ========================= contact style-6 start ========================= -->
 <section id="contact" class="contact-section contact-style-6" style="background-color: #f5f5f5; padding: 40px 0;">
@@ -921,7 +1071,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <div class="left-wrapper">
                <div class="section-title mb-40">
                   <h3 class="mb-15">Get In Touch</h3>
-                  <p>If you have any questions on the competition please reach out to Manny Fajemilua, or dial into the launch or check in event.</p>
+                  <p>If you have any questions on the competition please reach out to Manny Fajemilua, or dial into the launch or mid point drop in event.</p>
                </div>
                <div class="col-lg-12 col-md-6">
                   <div class="single-item">
@@ -940,59 +1090,58 @@ document.addEventListener('DOMContentLoaded', function() {
 </section>
     <!-- ========================= contact style-6 end ========================= -->
 
-  		<!-- ========================= footer style-1 start ========================= -->
-    <footer class="footer footer-style-1">
-      <div class="container">
-        <div class="widget-wrapper">
-          <div class="row">
-            <div class="col-xl-3 col-lg-4 col-md-6">
-              <div class="footer-widget wow fadeInUp" data-wow-delay=".2s">
-                <div class="logo">
-                  <a href="#0"> <img src="assets/img/logo/logo.svg" alt=""> </a>
-                </div>
-                <p class="desc">Chelsea Football Club <br/>
-Stamford Bridge <br/>
-Fulham Road <br/>
-London <br/>
-SW6 1HS</p>
-
-              </div>
+<!-- ========================= footer style-1 start ========================= -->
+<footer class="footer footer-style-1">
+  <div class="container">
+    <div class="widget-wrapper">
+      <div class="row">
+        <div class="col-xl-3 col-lg-4 col-md-6">
+          <div class="footer-widget wow fadeInUp" data-wow-delay=".2s">
+            <div class="logo">
+              <a href="#home" class="page-scroll"> <img src="assets/img/logo/logo.svg" alt=""> </a>
             </div>
-            <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6 col-sm-6">
-              <div class="footer-widget wow fadeInUp" data-wow-delay=".3s">
-                <h6>Quick Link</h6>
-                <ul class="links">
-                  <li> <a href="#0">Competition</a> </li>
-                  <li> <a href="#0">Entry</a> </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
-              <div class="footer-widget wow fadeInUp" data-wow-delay=".4s">
-                <h6>Services</h6>
-                <ul class="links">
-                  <li> <a href="#0">Prizes</a> </li>
-                  <li> <a href="#0">Judging</a> </li>
-                </ul>
-              </div>
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-6">
-              <div class="footer-widget wow fadeInUp" data-wow-delay=".5s">
-                <h6>Help & Support</h6>
-                <ul class="links">
-                  <li> <a href="#0">FAQ</a> </li>
-                  <li> <a href="#0">Terms & Conditions</a> </li>
-                </ul>
-              </div>
-            </div>
+            <p class="desc">Chelsea Football Club <br/>
+            Stamford Bridge <br/>
+            Fulham Road <br/>
+            London <br/>
+            SW6 1HS</p>
           </div>
         </div>
-        <div class="copyright-wrapper wow fadeInUp" data-wow-delay=".2s">
-          <p>Designed and developed by <a href="https://uideck.com" rel="nofollow" target="_blank">Chelsea Performance Insight Team</a> in partnership with <a href="https://cj-mayes.com/">CJ Mayes</a></p>
+        <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6 col-sm-6">
+          <div class="footer-widget wow fadeInUp" data-wow-delay=".3s">
+            <h6>Quick Link</h6>
+            <ul class="links">
+              <li> <a href="#home" class="page-scroll"><span>Home</span></a> </li>
+              <li> <a href="#_entry" class="page-scroll"><span>Entry</span></a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6">
+          <div class="footer-widget wow fadeInUp" data-wow-delay=".4s">
+            <h6>Services</h6>
+            <ul class="links">
+              <li> <a href="#prizes" class="page-scroll"><span>Prizes</span></a> </li>
+              <li> <a href="#judges" class="page-scroll"><span>Judging</span></a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-6">
+          <div class="footer-widget wow fadeInUp" data-wow-delay=".5s">
+            <h6>Help & Support</h6>
+            <ul class="links">
+              <li> <a href="#faq" class="page-scroll"><span>FAQ</span></a> </li>
+              <li> <a href="mailto:emmanuel.fajemilua@chelseafc.com?subject=Performance%20Insights%20Competition%20Question"><span>Email</span></a> </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </footer>
-    <!-- ========================= footer style-1 end ========================= -->
+    </div>
+    <div class="copyright-wrapper wow fadeInUp" data-wow-delay=".2s">
+      <p>Designed and developed by <a href="https://uideck.com" rel="nofollow" target="_blank">Chelsea Performance Insight Team</a> in partnership with <a href="https://cj-mayes.com/">CJ Mayes</a></p>
+    </div>
+  </div>
+</footer>
+<!-- ========================= footer style-1 end ========================= -->
 
     <!-- ========================= scroll-top start ========================= -->
     <a href="#" class="scroll-top"> <i class="lni lni-chevron-up"></i> </a>
