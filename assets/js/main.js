@@ -1,64 +1,85 @@
-/*
-	Dopetrope by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
-(function($) {
+(function() {
 
-	var	$window = $(window),
-		$body = $('body');
+    /* ====================
+    Preloader
+    ======================= */
+	window.onload = function () {
+		window.setTimeout(fadeout, 300);
+	}
 
-	// Breakpoints.
-		breakpoints({
-			xlarge:  [ '1281px',  '1680px' ],
-			large:   [ '981px',   '1280px' ],
-			medium:  [ '737px',   '980px'  ],
-			small:   [ null,      '736px'  ]
-		});
+	function fadeout() {
+		document.querySelector('.preloader').style.opacity = '0';
+		document.querySelector('.preloader').style.display = 'none';
+	}
 
-	// Play initial animations on page load.
-		$window.on('load', function() {
-			window.setTimeout(function() {
-				$body.removeClass('is-preload');
-			}, 100);
-		});
 
-	// Dropdowns.
-		$('#nav > ul').dropotron({
-			mode: 'fade',
-			noOpenerFade: true,
-			alignment: 'center'
-		});
+    window.onscroll = function () {
+        var header_navbar = document.querySelector(".hero-section-wrapper-2 .header");
+        var sticky = header_navbar.offsetTop;
 
-	// Nav.
+        if (window.pageYOffset > sticky) {
+            header_navbar.classList.add("sticky");
+        } else {
+            header_navbar.classList.remove("sticky");
+        }
 
-		// Title Bar.
-			$(
-				'<div id="titleBar">' +
-					'<a href="#navPanel" class="toggle"></a>' +
-				'</div>'
-			)
-				.appendTo($body);
+        // show or hide the back-top-top button
+        var backToTo = document.querySelector(".scroll-top");
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            backToTo.style.display = "flex";
+        } else {
+            backToTo.style.display = "none";
+        }
+    };
 
-		// Panel.
-			$(
-				'<div id="navPanel">' +
-					'<nav>' +
-						$('#nav').navList() +
-					'</nav>' +
-				'</div>'
-			)
-				.appendTo($body)
-				.panel({
-					delay: 500,
-					hideOnClick: true,
-					hideOnSwipe: true,
-					resetScroll: true,
-					resetForms: true,
-					side: 'left',
-					target: $body,
-					visibleClass: 'navPanel-visible'
-				});
+      // header-5  toggler-icon
+      let navbarToggler2 = document.querySelector(".header-2 .navbar-toggler");
+      var navbarCollapse2 = document.querySelector(".header-2 .navbar-collapse");
 
-})(jQuery);
+      document.querySelectorAll(".header-2 .page-scroll").forEach(e =>
+          e.addEventListener("click", () => {
+              navbarToggler2.classList.remove("active");
+              navbarCollapse2.classList.remove('show')
+          })
+      );
+      navbarToggler2.addEventListener('click', function() {
+          navbarToggler2.classList.toggle("active");
+      })
+
+    // section menu active
+	function onScroll(event) {
+		var sections = document.querySelectorAll('.page-scroll');
+		var scrollPos = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop;
+
+		for (var i = 0; i < sections.length; i++) {
+			var currLink = sections[i];
+			var val = currLink.getAttribute('href');
+			var refElement = document.querySelector(val);
+			var scrollTopMinus = scrollPos + 73;
+			if (refElement.offsetTop <= scrollTopMinus && (refElement.offsetTop + refElement.offsetHeight > scrollTopMinus)) {
+				document.querySelector('.page-scroll').classList.remove('active');
+				currLink.classList.add('active');
+			} else {
+				currLink.classList.remove('active');
+			}
+		}
+	};
+
+    window.document.addEventListener('scroll', onScroll);
+
+
+      //====== counter up 
+      var cu = new counterUp({
+        start: 0,
+        duration: 2000,
+        intvalues: true,
+        interval: 100,
+        append: " ",
+      });
+      cu.start();
+
+	// WOW active
+    new WOW().init();
+
+})();
