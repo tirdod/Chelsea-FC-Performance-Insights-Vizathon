@@ -42,6 +42,54 @@
     </div>
     <!-- ========================= preloader end ========================= -->
 
+    <style>
+            .navbar-nav .active {
+    /* Your active state styling here */
+    color: #your-active-color;
+    font-weight: bold;
+    /* Add any other styles you want for the active state */
+    </style>
+
+}
+
+    <head>
+    <!-- Your existing head content -->
+
+    <style>
+        /* Add the new CSS rules here */
+        .navbar-nav .nav-item {
+          position: relative;
+        }
+
+        .navbar-nav .nav-item a {
+          position: relative;
+          display: inline-block;
+          padding: 5px 0;
+        }
+
+        .navbar-nav .nav-item a span {
+          position: relative;
+          z-index: 2;
+        }
+
+        .navbar-nav .nav-item a::before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 2px;
+          background-color: #your-hover-color; /* Replace with your desired color */
+          top: -2px;
+          left: 0;
+          transform: scaleX(0);
+          transition: transform 0.3s ease;
+        }
+
+        .navbar-nav .nav-item a:hover::before,
+        .navbar-nav .nav-item a.active::before {
+          transform: scaleX(1);
+        }
+    </style>
+</head>
     <!-- ========================= hero-section-wrapper-2 start ========================= -->
     <section id="home" class="hero-section-wrapper-2">
 
@@ -62,30 +110,27 @@
                   </button>
 
                   <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent2">
-                    <ul id="nav2" class="navbar-nav ml-auto">
-                      <li class="nav-item">
-                        <a class="page-scroll active" href="#home">Home</a>
-                      </li>
-                      <!--<li class="nav-item">
-                        <a class="page-scroll" href="#showcase">Showcase</a>
-                      </li> -->
-                      <li class="nav-item">
-                        <a class="page-scroll" href="#entry">Entry</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="page-scroll" href="#dates">Key Dates</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="page-scroll" href="#prizes">Prizes</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="page-scroll" href="#judges">Judges</a>
-                      </li>
-                        <li class="nav-item">
-                        <a class="page-scroll" href="#faq">FAQ</a>
-                      </li>
-                    </ul>
-                  </div>
+  <ul id="nav2" class="navbar-nav ml-auto">
+    <li class="nav-item">
+      <a class="page-scroll active" href="#home"><span>Home</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="page-scroll" href="#_entry"><span>Entry</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="page-scroll" href="#key_dates"><span>Key Dates</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="page-scroll" href="#prizes"><span>Prizes</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="page-scroll" href="#judges"><span>Judges</span></a>
+    </li>
+    <li class="nav-item">
+      <a class="page-scroll" href="#faq"><span>FAQ</span></a>
+    </li>
+  </ul>
+</div>
                   <!-- navbar collapse -->
                 </nav>
                 <!-- navbar -->
@@ -319,7 +364,7 @@
 }
 </style>
     <!-- ========================= feature style-2 start ========================= -->
-<section id="entry" class="feature-section feature-style-2">
+<section id="_entry" class="feature-section feature-style-2">
    <div class="container">
       <div class="row">
          <div class="col-lg-12">
@@ -388,7 +433,9 @@
          </div>
       </div>
    </div>
-<section id="entry" class="feature-section feature-style-2 extra-bottom-padding">
+    </section>
+
+<section class="feature-section feature-style-2 extra-bottom-padding"> </section>
 
 <section class="quote-blurb" style="background-color: #EEEEEE; padding: 60px 0; text-align: center;">
     <div class="container">
@@ -410,7 +457,7 @@
     </div>
 </section>
 
-  <section id="dates" class="feature-section feature-style-2">
+  <section id="key_dates" class="feature-section feature-style-2">
    <div class="container">
       <div class="row">
          <div class="col-lg-12">
