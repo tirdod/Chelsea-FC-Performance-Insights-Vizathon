@@ -462,9 +462,18 @@
 </section>
 
     <style>
-        @media (max-width: 767px) {
-  .calendar-container .calendar:first-child {
+@media (max-width: 767px) {
+  .calendar-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .calendar-wrapper {
     margin-bottom: 30px;
+  }
+
+  .calendar-wrapper:last-child {
+    margin-bottom: 0;
   }
 }
     </style>
