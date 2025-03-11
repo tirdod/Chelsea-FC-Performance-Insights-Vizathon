@@ -131,6 +131,9 @@
     <li class="nav-item">
       <a class="page-scroll" href="#challenge"><span>Challenge</span></a>
     </li>
+          <li class="nav-item">
+      <a class="page-scroll" href="#data"><span>Data</span></a>
+    </li>
     <li class="nav-item">
       <a class="page-scroll" href="#key_dates"><span>Key Dates</span></a>
     </li>
@@ -138,7 +141,7 @@
       <a class="page-scroll" href="#prizes"><span>Prizes</span></a>
     </li>
     <li class="nav-item">
-      <a class="page-scroll" href="#judges"><span>Judges</span></a>
+      <a class="page-scroll" href="#judges"><span>Judging</span></a>
     </li>
     <li class="nav-item">
       <a class="page-scroll" href="#faq"><span>FAQ</span></a>
@@ -177,6 +180,21 @@
 
 
 <!-- ========================= hero-2 start ========================= -->
+<style>
+.hero-image-wrapper {
+  overflow: hidden;
+}
+
+.scaled-image {
+  width: calc(236% + 100px);
+  height: calc(236% + 100px);
+  object-fit: cover;
+  object-position: right;
+  margin: -0px;
+}
+   </style>
+
+
 <div class="hero-section hero-style-2">
   <div class="container">
     <div class="row align-items-end">
@@ -184,20 +202,25 @@
         <div class="hero-content-wrapper">
           <h4 class="wow fadeInUp" data-wow-delay=".2s">17th March - 7th April 2025</h4>
           <h2 class="mb-30 wow fadeInUp" data-wow-delay=".4s">CFC Performance Insights Vizathon</h2>
-        <p class="mb-40 wow fadeInUp competition-description" data-wow-delay=".6s">
-          <strong>#CFCInsights</strong>
-          <br><br>
-          <span class="smaller-text">
-            Create the most compelling Physical Performance interface for elite football players and their coaches.
-            <br>
-            <br>This vizathon is your platform to showcase innovative design skills, technical mastery, and user-focused thinking.
+          <p class="mb-40 wow fadeInUp competition-description" data-wow-delay=".6s">
+            <strong>#CFCInsights</strong>
             <br><br>
-            You'll have the chance to make a significant impact on real world applications in professional football.
-          </span>
-        </p>
-        <a href="https://forms.monday.com/forms/dbe19324ddf23cab59a28188edce571a" target="_blank" class="button button-lg radius-3 wow fadeInUp" data-wow-delay=".7s">Submit Your Entry</a>
+            <span class="smaller-text">
+              Create the most compelling Physical Performance interface for elite football players and their coaches.
+              <br>
+              <br>This vizathon is your platform to showcase innovative design skills, technical mastery, and user-focused thinking.
+              <br><br>
+              You'll have the chance to make a significant impact on real world applications in professional football.
+            </span>
+          </p>
+          <a href="https://forms.monday.com/forms/dbe19324ddf23cab59a28188edce571a" target="_blank" class="button button-lg radius-3 wow fadeInUp" data-wow-delay=".7s">Submit Your Entry</a>
         </div>
       </div>
+        <div class="col-lg-6">
+          <div class="hero-image-wrapper wow fadeInRight" data-wow-delay=".5s">
+            <img src="assets/img/logo/CL2_1208_pzc57mTH.jpg" alt="CFC Performance Insights Vizathon" class="scaled-image">
+          </div>
+        </div>
     </div>
   </div>
 </div>
@@ -426,7 +449,7 @@
 }
 </style>
     <!-- ========================= feature style-2 start ========================= -->
-<section id="challenge" class="feature-section feature-style-2">
+<section id="challenge2" class="feature-section feature-style-2">
    <div class="container">
       <div class="row">
          <div class="col-lg-12">
@@ -493,12 +516,89 @@
                <div class="content">
                   <h5 class="mb-25">External Factors</h5>
                   <p>E.g Outside influences that may impact an individual's performance. Environmental, dynamics, cohesion, motivation.</p>
+
+               </div>
+            </div>
+         </div>
+
+      </div>
+   </div>
+    </section>
+
+<!-- ========================= Submit Your Entry section start ========================= -->
+
+<!-- ========================= Submit Your Entry section start ========================= -->
+<section id="entry" class="feature-section feature-style-2" style="background-color: #001B71; color: white;">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-6">
+            <div class="single-feature wow fadeInUp" data-wow-delay=".2s">
+               <div class="content">
+                  <h5 class="mb-25" style="color: white;">Submit Your Entry</h5>
+                  <a href="https://forms.monday.com/forms/dbe19324ddf23cab59a28188edce571a" target="_blank" class="button button-lg radius-3 wow fadeInUp" data-wow-delay=".7s" style="background-color: #7DBBFA;">Submit Your Entry</a>
+               </div>
+            </div>
+         </div>
+         <div class="col-lg-6">
+            <div class="single-feature wow fadeInUp" data-wow-delay=".3s">
+               <div class="content">
+                  <div class="faq-wrapper">
+                     <!-- Item 1 -->
+                     <div class="single-faq wow fadeInUp" data-wow-delay=".2s">
+                        <button class="w-100 text-left" onclick="toggleItem(1)" style="background-color: transparent; border: none; color: white;">
+                           <div class="faq-header d-flex align-items-center">
+                              <span class="faq-icon">
+                                 <i class="lni lni-plus" id="icon-plus-1"></i>
+                                 <i class="lni lni-minus" id="icon-minus-1" style="display: none;"></i>
+                              </span>
+                              <h5>How do I submit my work?</h5>
+                           </div>
+                        </button>
+                        <div class="faq-body" id="content-1" style="display: none; color: #001B71; background-color: white; padding: 10px; border-radius: 5px;">
+                           <p>You must fill in the submission form to enter the competition. Work not submitted via the form will not be considered in the competition.</p>
+                        </div>
+                     </div>
+                     <!-- Item 2 -->
+                     <div class="single-faq wow fadeInUp" data-wow-delay=".3s">
+                        <button class="w-100 text-left" onclick="toggleItem(2)" style="background-color: transparent; border: none; color: white;">
+                           <div class="faq-header d-flex align-items-center">
+                              <span class="faq-icon">
+                                 <i class="lni lni-plus" id="icon-plus-2"></i>
+                                 <i class="lni lni-minus" id="icon-minus-2" style="display: none;"></i>
+                              </span>
+                              <h5>Should I share my work online?</h5>
+                           </div>
+                        </button>
+                        <div class="faq-body" id="content-2" style="display: none; color: #001B71; background-color: white; padding: 10px; border-radius: 5px;">
+                           <p>Entry links should remain public where possible. If you want to promote your work on different platforms, use the hashtag #CFCInsights.</p>
+                        </div>
+                     </div>
+                     <!-- Item 3 -->
+                     <div class="single-faq wow fadeInUp" data-wow-delay=".4s">
+                        <button class="w-100 text-left" onclick="toggleItem(3)" style="background-color: transparent; border: none; color: white;">
+                           <div class="faq-header d-flex align-items-center">
+                              <span class="faq-icon">
+                                 <i class="lni lni-plus" id="icon-plus-3"></i>
+                                 <i class="lni lni-minus" id="icon-minus-3" style="display: none;"></i>
+                              </span>
+                              <h5>Can I submit work I've started prior to the launch date?</h5>
+                           </div>
+                        </button>
+                        <div class="faq-body" id="content-3" style="display: none; color: #001B71; background-color: white; padding: 10px; border-radius: 5px;">
+                           <p>Yes, if you tailor a previous piece of work to the judging challenge criteria, you can enter work that has been adapted from up to a year prior to the launch date.</p>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
       </div>
    </div>
-    </section>
+</section>
+<!-- ========================= Submit Your Entry section end ========================= -->
+
+<!-- ========================= Submit Your Entry section end ========================= -->
+
     <!-- ========================= Data start ========================= -->
 <section id="data" class="feature-section feature-style-2">
    <div class="container">
@@ -533,20 +633,20 @@
                   <h5 class="mb-25">Data FAQs</h5>
                   <div class="faq-wrapper">
                      <!-- Item 1 -->
-                     <div class="single-faq wow fadeInUp" data-wow-delay=".2s">
-                        <button class="w-100 text-left" onclick="toggleItem(1)">
-                           <div class="faq-header d-flex align-items-center">
-                              <span class="faq-icon">
-                                 <i class="lni lni-plus" id="icon-plus-1"></i>
-                                 <i class="lni lni-minus" id="icon-minus-1" style="display: none;"></i>
-                              </span>
-                              <h5>Can I use additional data?</h5>
-                           </div>
-                        </button>
-                        <div class="faq-body" id="content-1" style="display: none;">
-                           <p>Yes, you can use publicly referenced data or create your own mock dataset tailored to the judging criteria. Be creative!</p>
-                        </div>
-                     </div>
+        <div class="single-faq wow fadeInUp" data-wow-delay=".2s">
+          <button class="w-100 text-left" onclick="toggleItem('faq-1')">
+            <div class="faq-header d-flex align-items-center">
+              <span class="faq-icon">
+                <i class="lni lni-plus" id="icon-plus-faq-1"></i>
+                <i class="lni lni-minus" id="icon-minus-faq-1" style="display: none;"></i>
+              </span>
+              <h5>Can I use additional data?</h5>
+            </div>
+          </button>
+          <div class="faq-body" id="content-faq-1" style="display: none;">
+            <p>Yes, you can use publicly referenced data or create your own mock dataset tailored to the judging criteria. Be creative!</p>
+          </div>
+        </div>
                      <!-- Item 1.2 -->
                      <div class="single-faq wow fadeInUp" data-wow-delay=".2s">
                         <button class="w-100 text-left" onclick="toggleItem(12)">
@@ -563,20 +663,20 @@
                         </div>
                      </div>
                      <!-- Item 2 -->
-                     <div class="single-faq wow fadeInUp" data-wow-delay=".3s">
-                        <button class="w-100 text-left" onclick="toggleItem(2)">
-                           <div class="faq-header d-flex align-items-center">
-                              <span class="faq-icon">
-                                 <i class="lni lni-plus" id="icon-plus-2"></i>
-                                 <i class="lni lni-minus" id="icon-minus-2" style="display: none;"></i>
-                              </span>
-                              <h5>How can I understand the data that is available?</h5>
-                           </div>
-                        </button>
-                        <div class="faq-body" id="content-2" style="display: none;">
-                           <p>The mock data will come with a data dictionary within the repository.</p>
-                        </div>
-                     </div>
+        <div class="single-faq wow fadeInUp" data-wow-delay=".3s">
+          <button class="w-100 text-left" onclick="toggleItem('faq-4')">
+            <div class="faq-header d-flex align-items-center">
+              <span class="faq-icon">
+                <i class="lni lni-plus" id="icon-plus-faq-4"></i>
+                <i class="lni lni-minus" id="icon-minus-faq-4" style="display: none;"></i>
+              </span>
+              <h5>How can I understand the data that is available?</h5>
+            </div>
+          </button>
+          <div class="faq-body" id="content-faq-4" style="display: none;">
+            <p>The mock data will come with a data dictionary within the repository.</p>
+          </div>
+        </div>
                   </div>
                </div>
             </div>
@@ -589,19 +689,19 @@
 
 <section class="feature-section feature-style-2 extra-bottom-padding"> </section>
 
-<section class="quote-blurb" style="background-color: #EEEEEE; padding: 60px 0; text-align: center;">
+<section class="quote-blurb" style="background-color: #001B71; padding: 60px 0; text-align: center;">
     <div class="container">
         <div class="row">
             <div class="col-md-10 offset-md-1">
-                <blockquote style="color: #001B71; font-size: 24px; font-weight: 300; line-height: 1.6; margin: 0; position: relative; padding: 20px 40px;">
+                <blockquote style="color: #FFFFFF; font-size: 24px; font-weight: 300; line-height: 1.6; margin: 0; position: relative; padding: 20px 40px;">
                     <i class="fas fa-quote-left" style="font-size: 36px; position: absolute; top: 0; left: 0; opacity: 0.7;"></i>
                     This is an opportunity to showcase your creativity, technical expertise, and user-centric design thinking while contributing to an impactful real-world application in professional sports.
                     <i class="fas fa-quote-right" style="font-size: 36px; position: absolute; bottom: 0; right: 0; opacity: 0.7;"></i>
                 </blockquote>
-                <div style="margin-top: 20px; color: #001B71; font-size: 18px; font-weight: 500;">
+                <div style="margin-top: 20px; color: #FFFFFF; font-size: 18px; font-weight: 500;">
                     — Richard Akenhead
                 </div>
-                <div style="color: #001B71; font-size: 16px; font-style: italic;">
+                <div style="color: #FFFFFF; font-size: 16px; font-style: italic;">
                     Head of Performance Insights, Chelsea FC
                 </div>
             </div>
@@ -965,28 +1065,70 @@ document.addEventListener('DOMContentLoaded', function() {
 </section>
     <!-- ========================= about style-3 end ========================= -->
 
-<div class="container pt-60 pb-60">
-   <h4 class="wow fadeInUp" data-wow-delay=".2s" style="margin-bottom: 30px;">Submit Your Entry</h4>
-   <div class="mb-50 wow fadeInUp" data-wow-delay=".6s">
-      <ul style="padding-left: 20px;">
-          <li style="margin-bottom: 15px;"> <strong>How do I submit my work?<br/> </strong>You must fill in the submission form to enter the competition. Work not submitted via the form will not be considered in the competition. </li>
-         <li style="margin-bottom: 15px;"> <strong>Should I share my work online?<br/> </strong> Entry links should remain public where possible. If you want to promote your work on different platforms, use the hashtag <span class="date-highlight">#CFCInsights.</span></li>
-         <li style="margin-bottom: 15px;"> <strong>Can I submit work I've started prior to the launch date?</strong> Yes, if you tailor a previous piece of work to the judging entry criteria, you can enter work that has been adapted from up to a year prior to the launch date. </li>
-      </ul>
-   </div>
-   <div class="buttons">
-                 <a href="https://forms.monday.com/forms/dbe19324ddf23cab59a28188edce571a" target="_blank" class="button button-lg radius-3 wow fadeInUp" data-wow-delay=".7s">Submit Your Entry</a>
-   </div>
-</div>
 <!-- ========================= team style-1 start ========================= -->
-<section id="judges" class="team-section team-style-1">
+
+<style>
+  .single-team {
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    border-radius: 8px;
+  }
+  .single-team:hover {
+    border-color: #ffffff;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+    transform: translateY(-5px);
+  }
+</style>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judging Criteria</title>
+</head>
+<body>
+<section id="judges" class="team-section team-style-1" style="background-color: #001B71; color: white;">
   <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-xxl-15 col-xl-15 col-lg-7 col-md-10">
-        <div class="section-title text-center mb-60">
-          <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s">Judges</h3>
-          <p class="wow fadeInUp" data-wow-delay=".4s">Submissions will be evaluated by an expert panel from professional football, sports science, and the data visualization communities. <br>
-            </br>Entries will be judged on the above categories, giving an equal scoring rating of 1-5, by each judge. Feedback is not shared publicly.</p>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="section-title mb-60" style="text-align: left;">
+          <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s" style="color: white;">Judging Criteria</h3>
+
+          <table class="wow fadeInUp" data-wow-delay=".4s" style="width: 100%; border-collapse: collapse;">
+            <tr>
+              <th style="text-align: left; padding: 8px; border-bottom: 1px solid white;">Criteria</th>
+              <th style="text-align: left; padding: 8px; border-bottom: 1px solid white;">Description</th>
+            </tr>
+            <tr>
+              <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Engagement & Clarity</td>
+              <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Does the interface capture attention and communicate key information effortlessly?</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Actionability</td>
+              <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Does it enable players and coaches to make quick, informed decisions?</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Intuitiveness</td>
+              <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Is the navigation and layout intuitive and easy to use?</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Visual Appeal</td>
+              <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Is the design aesthetically pleasing and professional?</td>
+            </tr>
+            <tr>
+              <td style="padding: 8px;">Innovation</td>
+              <td style="padding: 8px;">Does the solution introduce novel ways of presenting data?</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="section-title mb-60" style="text-align: left;">
+          </br></br>
+          <div class="rating-stars text-left mb-3">
+          </div>
+          <p class="wow fadeInUp" data-wow-delay=".4s"></br></br>Submissions will be evaluated by an expert panel from professional football, sports science, and the data visualization communities.</br> </br>Entries will be judged on 5 unique categories, giving an equal scoring rating of 1-5, by each judge. Feedback is not shared publicly.</p>
         </div>
       </div>
     </div>
@@ -997,16 +1139,16 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="image">
             <img src="assets/img/team/team-1/team-RA.png" alt="">
           </div>
-          <div class="info">
+          <div class="info" style="color: white;">
             <h6>Richard Akenhead</h6>
             <div class="content-wrapper">
-              <p>Head of Performance Insights, CFC</p>
+               <p style="color: #001B71;">Head of Performance Insights, CFC</p>
               <ul class="socials">
-                                  <li>
-                  <a href="https://x.com/RichAkenhead" target="_blank"> <i class="lni lni-twitter-filled"></i> </a>
+                <li>
+                  <a href="https://x.com/RichAkenhead" target="_blank" style="color: white;"> <i class="lni lni-twitter-filled"></i> </a>
                 </li>
                 <li>
-                  <a href="https://www.linkedin.com/in/richard-akenhead-ph-d-83505253/?originalSubdomain=uk" target="_blank"> <i class="lni lni-linkedin-original"></i> </a>
+                  <a href="https://www.linkedin.com/in/richard-akenhead-ph-d-83505253/?originalSubdomain=uk" target="_blank" style="color: white;"> <i class="lni lni-linkedin-original"></i> </a>
                 </li>
               </ul>
             </div>
@@ -1021,7 +1163,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="info">
             <h6>Emmanuel Fajemilua</h6>
             <div class="content-wrapper">
-              <p>Performance Insights Analyst, CFC</p>
+              <p style="color: #001B71;">Performance Insights Analyst, CFC</p>
               <ul class="socials">
                 <li>
                   <a href="https://x.com/data_manny" target="_blank"> <i class="lni lni-twitter-filled"></i> </a>
@@ -1042,7 +1184,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="info">
             <h6>CJ </br>Mayes</h6>
             <div class="content-wrapper">
-              <p>BI Director</br></br></br></p>
+              <p style="color: #001B71;">BI Director</br></br></br></p>
               <ul class="socials">
                 <li>
                   <a href="https://x.com/_CJMayes" target="_blank"> <i class="lni lni-twitter-filled"></i> </a>
@@ -1063,7 +1205,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="info">
             <h6>Peter McKeever</h6>
             <div class="content-wrapper">
-              <p>Senior Viz<br/>Editor,<br/>Stats Perform<br/></p>
+              <p style="color: #001B71;">Senior Viz<br/>Editor,<br/>Stats Perform<br/></p>
               <ul class="socials">
                 <li>
                   <a href="https://x.com/petermckeever" target="_blank"> <i class="lni lni-twitter-filled"></i> </a>
@@ -1084,7 +1226,7 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="info">
             <h6>1st Team<br/>Player</h6>
             <div class="content-wrapper">
-              <p>CFC</br></br></br></p>
+              <p style="color: #001B71;">CFC</br></br></br></p>
               <ul class="socials">
                 <li>
                   <a href=""> <i class=""></i> </a>
@@ -1098,6 +1240,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
   </div>
 </section>
+</body>
+</html>
 <!-- ========================= team style-1 end ========================= -->
     <!-- ========================= faq start ========================= -->
 <section id="faq" class="faq-section pt-60 pb-60">
@@ -1127,16 +1271,16 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
           <!-- Add more items as needed -->
         <div class="single-faq wow fadeInUp" data-wow-delay=".4s">
-          <button class="w-100 text-left" onclick="toggleItem(3)">
+          <button class="w-100 text-left" onclick="toggleItem('faq-3')">
             <div class="faq-header d-flex align-items-center">
               <span class="faq-icon">
-                <i class="lni lni-plus" id="icon-plus-3"></i>
-                <i class="lni lni-minus" id="icon-minus-3" style="display: none;"></i>
+                <i class="lni lni-plus" id="icon-plus-faq-3"></i>
+                <i class="lni lni-minus" id="icon-minus-faq-3" style="display: none;"></i>
               </span>
               <h5>Can I enter more than once?</h5>
             </div>
           </button>
-          <div class="faq-body" id="content-3" style="display: none;">
+          <div class="faq-body" id="content-faq-3" style="display: none;">
             <p>Yes, you can enter multiple times. Each submission requires a separate form to be submitted.</p>
           </div>
         </div>
@@ -1225,6 +1369,7 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
 </section>
 <!-- ========================= faq end ========================= -->
+
 
 <style>
   .faq-section {
