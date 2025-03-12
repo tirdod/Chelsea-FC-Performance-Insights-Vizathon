@@ -226,24 +226,6 @@
     .col-lg-6:first-child {
       width: 100%; /* Make the left column full width on mobile */
     }
-
-    /* New styles for calendar spacing on mobile */
-    .calendar-container {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .calendar {
-      margin-bottom: 30px; /* Add space below each calendar */
-    }
-
-    .calendar:last-child {
-      margin-bottom: 0; /* Remove margin from the last calendar */
-    }
-
-    .calendar h6 {
-      margin-top: 20px; /* Add space above the April 2025 header */
-    }
   }
 </style>
 
@@ -641,79 +623,20 @@
     </div>
 </section>
 
-<style>
-  @media (max-width: 767px) {
-    .calendar-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center; /* Center align the calendars */
-    }
-
-    .calendar-wrapper {
-      margin-bottom: 30px;
-      padding-bottom: 30px;
-      width: 100%; /* Full width on mobile */
-      max-width: 300px; /* Limit the maximum width */
-    }
-
-    .calendar-wrapper:last-child {
-      margin-bottom: 0;
-      padding-bottom: 0;
-    }
-
-    .calendar {
-      width: 100%; /* Full width within the wrapper */
-    }
-
-    .calendar-table {
-      margin: 0 auto; /* Center the table within its container */
-    }
-  }
-
-  /* Existing styles */
-  .date-list {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  .date-list li {
-    margin-bottom: 10px;
-    padding: 5px;
-    transition: background-color 0.3s;
-  }
-  .calendar-container {
-    display: flex;
-    justify-content: space-between;
-  }
-  .calendar {
-    width: 48%;
-  }
-  .calendar h6 {
-    margin-bottom: 5px;
-  }
-  .calendar-table {
-    width: 100%;
-    border-collapse: collapse;
-    font-size: 12px;
-  }
-  .calendar-table th, .calendar-table td {
-    border: 1px solid #ddd;
-    padding: 4px;
-    text-align: center;
-  }
-  .calendar-table th {
-    background-color: #f2f2f2;
-  }
-  .highlight {
-    background-color: #ED602D;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  .date-highlight {
-    background-color: #FFE0D1;
-  }
+<style> /* Styles for web (desktop) */
+.calendar-container { display: flex; justify-content: space-between; }
+.calendar { width: 48%; } /* Styles for mobile */ @media (max-width: 767px) {
+.calendar-container { display: flex; flex-direction: column; align-items: center; }
+.calendar { width: 100%; max-width: 300px; margin-bottom: 30px; }
+.calendar:last-child { margin-bottom: 0; }
+.calendar h6 { margin-top: 20px; } }
+/* Existing styles */ .date-list { list-style-type: none; padding-left: 0; }
+.date-list li { margin-bottom: 10px; padding: 5px; transition: background-color 0.3s; }
+.calendar h6 { margin-bottom: 5px; } .calendar-table { width: 100%; border-collapse: collapse; font-size: 12px; }
+.calendar-table th, .calendar-table td { border: 1px solid #ddd; padding: 4px; text-align: center; }
+.calendar-table th { background-color: #f2f2f2; } .highlight { background-color: #ED602D; color: white; font-weight: bold; cursor: pointer; }
+.date-highlight { background-color: #FFE0D1; }
 </style>
-
 
 <section id="key_dates" class="feature-section feature-style-2">
    <div class="container">
