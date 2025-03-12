@@ -979,6 +979,32 @@ document.addEventListener('DOMContentLoaded', function() {
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
     transform: translateY(-5px);
   }
+
+  .star-rating {
+  font-size: 24px;
+  color: #ccc;
+}
+
+.star {
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.star:hover,
+.star:hover ~ .star {
+  color: white;
+  text-shadow: 0 0 5px white;
+}
+
+/* Reverse the stars to get the correct highlighting order */
+.star-rating {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}
+
+.star-rating > .star {
+  display: inline-block;
+}
 </style>
 
 <!DOCTYPE html>
@@ -989,51 +1015,57 @@ document.addEventListener('DOMContentLoaded', function() {
     <title>Judging Criteria</title>
 </head>
 <body>
+
 <section id="judges" class="team-section team-style-1" style="background-color: #001B71; color: white;">
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-md-12">
         <div class="section-title mb-60" style="text-align: left;">
           <h3 class="mb-15 wow fadeInUp" data-wow-delay=".2s" style="color: white;">Judging Criteria</h3>
-
-          <table class="wow fadeInUp" data-wow-delay=".4s" style="width: 100%; border-collapse: collapse;">
-            <tr>
-              <th style="text-align: left; padding: 8px; border-bottom: 1px solid white;">Criteria</th>
-              <th style="text-align: left; padding: 8px; border-bottom: 1px solid white;">Description</th>
-            </tr>
-            <tr>
-              <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Engagement & Clarity</td>
-              <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Does the interface capture attention and communicate key information effortlessly?</td>
-            </tr>
-            <tr>
-              <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Actionability</td>
-              <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Does it enable players and coaches to make quick, informed decisions?</td>
-            </tr>
-            <tr>
-              <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Intuitiveness</td>
-              <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Is the navigation and layout intuitive and easy to use?</td>
-            </tr>
-            <tr>
-              <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Visual Appeal</td>
-              <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Is the design aesthetically pleasing and professional?</td>
-            </tr>
-            <tr>
-              <td style="padding: 8px;">Innovation</td>
-              <td style="padding: 8px;">Does the solution introduce novel ways of presenting data?</td>
-            </tr>
-          </table>
+                    <div class="star-rating">
+          <span class="star" data-rating="1">&#9733;</span>
+          <span class="star" data-rating="2">&#9733;</span>
+          <span class="star" data-rating="3">&#9733;</span>
+          <span class="star" data-rating="4">&#9733;</span>
+          <span class="star" data-rating="5">&#9733;</span>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="section-title mb-60" style="text-align: left;">
-          </br></br>
-          <div class="rating-stars text-left mb-3">
-          </div>
-          <p class="wow fadeInUp" data-wow-delay=".4s"></br></br>Submissions will be evaluated by an expert panel from professional football, sports science, and the data visualization communities.</br> </br>Entries will be judged on 5 unique categories, giving an equal scoring rating of 1-5, by each judge. Feedback is not shared publicly.</p>
+            <br/>
+          <p class="wow fadeInUp" data-wow-delay=".4s">Submissions will be evaluated by an expert panel from professional football, sports science, and the data visualization communities. Entries will be judged on 5 unique categories, giving an equal scoring rating of 1-5, by each judge. Feedback is not shared publicly.</p>
         </div>
       </div>
     </div>
 
+    <div class="row">
+      <div class="col-md-12">
+        <table class="wow fadeInUp" data-wow-delay=".4s" style="width: 100%; border-collapse: collapse;">
+          <tr>
+            <th style="text-align: left; padding: 8px; border-bottom: 1px solid white;">Criteria</th>
+            <th style="text-align: left; padding: 8px; border-bottom: 1px solid white;">Description</th>
+          </tr>
+          <tr>
+            <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Engagement & Clarity</td>
+            <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Does the interface capture attention and communicate key information effortlessly?</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Actionability</td>
+            <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Does it enable players and coaches to make quick, informed decisions?</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Intuitiveness</td>
+            <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Is the navigation and layout intuitive and easy to use?</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Visual Appeal</td>
+            <td style="padding: 8px; border-bottom: 1px solid rgba(255,255,255,0.1);">Is the design aesthetically pleasing and professional?</td>
+          </tr>
+          <tr>
+            <td style="padding: 8px;">Innovation</td>
+            <td style="padding: 8px;">Does the solution introduce novel ways of presenting data?</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+      <br/> <br/> <br/>
     <div class="row justify-content-center">
       <div class="col-xl-2 col-lg-2 col-md-4 col-sm-6">
         <div class="single-team wow fadeInUp" data-wow-delay=".2s">
@@ -1256,7 +1288,7 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
       </button>
       <div class="faq-body" id="content-10" style="display: none;">
-        <p>Entry links should remain public where possible. If you want to promote your work on different platforms, use the hashtag #CFCInsights.</p>
+        <p>We encourage participants to post their projects in public. If you want to promote your work on different platforms, use the hashtag #CFCInsights.</p>
       </div>
     </div>
 
