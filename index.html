@@ -226,6 +226,24 @@
     .col-lg-6:first-child {
       width: 100%; /* Make the left column full width on mobile */
     }
+
+    /* New styles for calendar spacing on mobile */
+    .calendar-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .calendar {
+      margin-bottom: 30px; /* Add space below each calendar */
+    }
+
+    .calendar:last-child {
+      margin-bottom: 0; /* Remove margin from the last calendar */
+    }
+
+    .calendar h6 {
+      margin-top: 20px; /* Add space above the April 2025 header */
+    }
   }
 </style>
 
