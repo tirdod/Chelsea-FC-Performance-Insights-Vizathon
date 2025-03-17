@@ -1,4 +1,4 @@
-testDate,expression,movement,quality,benchmarkPct
+﻿testDate,expression,movement,quality,benchmarkPct
 03/07/2023,isometric,upper body,pull,
 04/07/2023,dynamic,agility,acceleration,0.32
 10/07/2023,dynamic,agility,deceleration,0.867
