@@ -1024,18 +1024,20 @@ server <- function(input, output, session) {
   # REVISED INSIGHTS CALCULATION (no fixed date splits)
   
   insights_data <- reactive({
-    # Define our helper for title casing movement, expression, and quality if not already done.
-    to_title_movement <- function(x) {
-      tools::toTitleCase(gsub("_", " ", x))
-    }
-    
-    # Use your filtered physical capability data (pcap_filtered_data)
-    df <- pcap_filtered_data() %>%
+
+        # Use your filtered physical capability data (pcap_filtered_data)
+    df <- physical_data () %>%
       mutate(
         # Create a nicely formatted combo by title-casing the expression and quality separately,
         # and then joining them with a newline.
         combo = paste(to_title_movement(expression), to_title_movement(quality), sep = "\n")
-      )
+      ) 
+
+    # Calculate the most recent test date in the data
+    recent_test <- max(df$testDate, na.rm = TRUE)
+    
+    # Filter to only include tests from the past 90 days relative to the most recent test date
+    df <- df %>% filter(testDate >= recent_test - 90, testDate <= recent_test)    
     
     # For each movement + combo, compute:
     # - overall average during the selected period ("overall_avg")
