@@ -1,0 +1,6 @@
+*.css linguist-detectable=false
+*.html linguist-detectable=false
+*.js linguist-detectable=false
+*.R linguist-detectable=true
+*.r linguist-detectable=true
+*.Rmd linguist-detectable=true
