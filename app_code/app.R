@@ -59,7 +59,7 @@ dynamic_date_scale <- function(dates) {
     } else {
       scale_x_date(
         breaks = breaks_seq,
-        date_labels = "%b %Y"
+        date_labels = "%b\n%Y"
       )
     }
   }
