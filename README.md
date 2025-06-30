@@ -7,7 +7,7 @@ In May 2025, I participated in the Chelsea Football Club Performance Insights Vi
 The goal of the exercise was to create a both visually appealing and functional physical performance dashboard
 for elite football players and their coaches. A mock dataset was provided by Chelsea FC.
 The dataset consisted of four CSVs:
-- GPS Data.csv
+- CFC GPS Data.csv
 - CFC Individual Priority Areas.csv
 - CFC Physical Capability Data_.csv
 - CFC Recovery status Data.csv
