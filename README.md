@@ -8,7 +8,7 @@ The goal of the exercise was to create a both visually appealing and functional 
 for elite football players and their coaches. A mock dataset was provided by Chelsea FC.
 The dataset consisted of four CSVs:
 - GPS Data.csv
-- Individual Priority Areas.csv
+- CFC Individual Priority Areas.csv
 - CFC Physical Capability Data_.csv
 - CFC Recovery status Data.csv
 
