@@ -17,7 +17,7 @@ I developed my dashboard using **R Shiny**, which was structured around three co
 - **Player Development Priorities**: Highlight key focus areas for individual development.
 - **Physical Capability**: Visualize fitness levels and performance benchmarks.
 
-**[View the Shiny App here](https://tirdodbehbehani.shinyapps.io/ChelseaPerformanceInsightsVizathon/)**
+**[View the Shiny App](https://tirdodbehbehani.shinyapps.io/ChelseaPerformanceInsightsVizathon/)**
 
 **[Watch Demo Video](https://youtu.be/b2ehJVKicwU)**   
 
